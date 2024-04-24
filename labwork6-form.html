@@ -1,97 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    label{
+        display: flex;
+        width: 15vw;
+    }
+    form{
+        width: 200%;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+</style>
+
 <body>
     <h1 style="color: hsl(250, 47%, 47%); text-align: center;"><u>STUDENT REGISTRATION FORM</u></h1>
-    <form style="border: 1px solid hwb(250 35% 17%); 
-    background-color: hsl(250, 58%, 59%); color: white; width: 700px;" 
-    autocomplete="off">
-    <br><label for="fname" name="name">FIRST NAME</label>
-    <input type="text">(max 30 characters a-z and A-Z)<br><br>
+    <form style="border: 2px solid hwb(250 35% 17%); 
+    background-color: hsl(250, 58%, 59%); color: white; width: 950px;" autocomplete="off">
+    <blockquote>
+    <div class="container">
+        <label for="fname" name="name">FIRST NAME</label>
+        <input type="text">(max 30 characters a-z and A-Z)
+    </div><br>
 
-    <label for="lname" name="name">LAST NAME</label>
-    <input type="text">(max 30 characters a-z and A-Z)<br><br>
+    <div class="container">
+        <label for="lname" name="name">LAST NAME</label>
+        <input type="text">(max 30 characters a-z and A-Z)
+    </div><br>
+
+    <div class="container">
+        <label for="birth-date">DATE OF BIRTH</label>
+        <input type="date"><br><br>
+    </div><br>
     
-    <label for="birth-date">DATE OF BIRTH</label>
-    <input type="date"><br><br>
+    <div class="container">
+        <label for="email">EMAIL ID</label>
+        <input type="text">
+    </div><br>
 
-    <label for="email">EMAIL ID</label>
-    <input type="text"><br><br> 
+    <div class="container">
+        <label for="number">MOBILE NUMBER</label>
+        <input type="number"> <p>(10 digit number)</p>
+    </div><br>
     
-    <label for="number">MOBILE NUMBER</label>
-    <input type="number"> (10 digit number)<br><br>
+    <div class="container">
+        <label for="gender">Gender</label>
+        <p>Male</p><input type="radio" name="Male">
+        <p>Female</p><input type="radio" name="Female">
+    </div><br>
 
-    <label for="gender">Gender</label>
-    Male<input type="radio" name="Male">
-    Female<input type="radio" name="Female"><br><br> 
+    <div class="container">
+        <label for="address">ADDRESS</label>
+        <textarea name="address" rows="3" cols="50"></textarea>
+    </div><br>
 
-    <label for="address">ADDRESS</label>
-    <textarea name="address" rows="3" cols="50"></textarea><br><br>
+    <div class="container">
+        <label for="city">CITY</label>
+        <input type="text">(max 30 characters a-z and A-Z)
+        </div><br>
 
-    <label for="city">CITY</label>
-    <input type="text">(max 30 characters a-z and A-Z)<br><br>
-    
-    <label for="country">COUNTRY</label>
-    <input type="text" value="India"><br><br>
+    <div class="container">
+        <label for="country">COUNTRY</label>
+        <input type="text" value="India">
+        </div><br>
+        
+        <div class="container">
+        <label for="hobbies">HOBBIES</label>
 
-    <label for="hobbies">HOBBIES</label>
-    <input type="text">
+        <p>Drawing</p>
+        <input type="checkbox">
 
-    <label for="drawing">Drawing</label>
-    <input type="checkbox">
+        <p>Singing</p>
+        <input type="checkbox">
 
-    <label for="singing">Singing</label>
-    <input type="checkbox">
+        <p>Dancing</p>
+        <input type="checkbox">
 
-    <label for="dancing">Dancing</label>
-    <input type="checkbox">
-    
-    <label for="sketching">Sketching</label>
-    <input type="checkbox">
+        <p>Sketching</p>
+        <input type="checkbox">
 
-    <label for="others">Others</label>
-    <input type="checkbox">
-    <input type="text"><br><br>
+        <p>Others</p>
+        <input type="checkbox">
+        <input type="text">
+    </div><br>
 
-    <label for="qualification">QUALIFICATION</label>
-    SI.No. Examination Board  Percentage  Year of Passing<br>
-    <label for="no.">1</label>
-    <label for="grade">Class X</label>
-    <input type="text">
-    <input type="text">
-    <input type="text"><br><br>
+    <div class="container">
+        <label for="qualification">QUALIFICATION</label><br>
+        <table>
+            <tr>
+                <th>SI.No.</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Precentage</th>
+                <th>Years of Passing</th>
+            </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graducation</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
 
-    <label for="no.">2</label>
-    <label for="grade">Class XII</label>
-    <input type="text">
-    <input type="text">
-    <input type="text"><br><br>
+        </table>
+    </div><br>
 
-    <label for="no.">3</label>
-    <label for="grade">Graduation</label>
-    <input type="text">
-    <input type="text">
-    <input type="text"><br><br>
+    <div class="container">
+        <label for="courses">COURSES<br>APPLIED FOR</label>
+        <p>BCA</p>
+        <input type="radio">
 
-    <label for="no.">4</label>
-    <label for="grade">Masters</label>
-    <input type="text">
-    <input type="text">
-    <input type="text"><br><br>(10 char max)(upto 2 decimal)
+        <p>B.Com</p>
+        <input type="radio">
 
-    <label for="courses">COURSES</label><br>
-    <label for="applied">APPLIED FOR</label>
-    BCA <input type="radio">
-    B.Com <input type="radio">
-    B.Sc <input type="radio">
-    B.A <input type="radio"><br><br>
+        <p>B.Sc </p>
+        <input type="radio">
 
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-</form>
+        <p>B.A</p>
+        <input type="radio">
+    </div><br>
+
+        <div style="text-align:center;">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div></blockquote>
+    </form>
 </body>
 </html>
